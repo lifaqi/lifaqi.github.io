@@ -288,6 +288,165 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/10/机器学习之线性回归/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="神无月">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/10/机器学习之线性回归/" itemprop="url">机器学习之线性回归</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-10T14:42:25+08:00">
+                2018-08-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/10/机器学习之线性回归/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/10/机器学习之线性回归/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Demo：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"></span><br><span class="line">num_points = <span class="number">1000</span></span><br><span class="line">vectors_set = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(num_points):</span><br><span class="line">    x1 = np.random.normal(<span class="number">0.0</span>, <span class="number">0.55</span>)</span><br><span class="line">    y1 = x1 * <span class="number">0.1</span> + <span class="number">0.3</span> + np.random.normal(<span class="number">0.0</span>, <span class="number">0.03</span>)</span><br><span class="line">    vectors_set.append([x1, y1])</span><br><span class="line"></span><br><span class="line">x_data = [v[<span class="number">0</span>] <span class="keyword">for</span> v <span class="keyword">in</span> vectors_set]</span><br><span class="line">y_data = [v[<span class="number">1</span>] <span class="keyword">for</span> v <span class="keyword">in</span> vectors_set]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Graphic display</span></span><br><span class="line">plt.plot(x_data, y_data, <span class="string">'ro'</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line">W = tf.Variable(tf.random_uniform([<span class="number">1</span>], <span class="number">-1.0</span>, <span class="number">1.0</span>))</span><br><span class="line">b = tf.Variable(tf.zeros([<span class="number">1</span>]))</span><br><span class="line">y = W * x_data + b</span><br><span class="line"></span><br><span class="line">loss = tf.reduce_mean(tf.square(y - y_data))</span><br><span class="line">optimizer = tf.train.GradientDescentOptimizer(<span class="number">0.5</span>)</span><br><span class="line">train = optimizer.minimize(loss)</span><br><span class="line"></span><br><span class="line">init = tf.initialize_all_variables()</span><br><span class="line"></span><br><span class="line">sess = tf.Session()</span><br><span class="line">sess.run(init)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> step <span class="keyword">in</span> range(<span class="number">20</span>):</span><br><span class="line">    sess.run(train)</span><br><span class="line">    print(step, sess.run(W), sess.run(b))</span><br><span class="line">    print(step, sess.run(loss))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Graphic display</span></span><br><span class="line">    plt.plot(x_data, y_data, <span class="string">'ro'</span>)</span><br><span class="line">    plt.plot(x_data, sess.run(W) * x_data + sess.run(b))</span><br><span class="line">    plt.xlabel(<span class="string">'x'</span>)</span><br><span class="line">    plt.xlim(<span class="number">-2</span>, <span class="number">2</span>)</span><br><span class="line">    plt.ylim(<span class="number">0.1</span>, <span class="number">0.6</span>)</span><br><span class="line">    plt.ylabel(<span class="string">'y'</span>)</span><br><span class="line">    plt.legend()</span><br><span class="line">    plt.show()</span><br></pre></td></tr></table></figure>
+<p>效果图：</p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fu4lwslcx4j30hs0dc3z6.jpg" alt="image-20180810145042739"></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fu4m76g3hrj30hs0dcjs1.jpg" alt="image-20180810150055012"></p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fu4m7i3ur4j30hs0dcwf8.jpg" alt="image-20180810150113834"></p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fu4m7rdotkj30hs0dcaau.jpg" alt="image-20180810150128775"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/07/Git丢失文件找回/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1114,7 +1273,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1125,7 +1284,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
