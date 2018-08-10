@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-10T07:02:23.000Z</updated>
+  <updated>2018-08-10T07:05:26.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,22 +17,16 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>机器学习之线性回归</title>
+    <title>机器学习线性回归</title>
     <link href="http://yoursite.com/2018/08/10/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
     <id>http://yoursite.com/2018/08/10/机器学习之线性回归/</id>
     <published>2018-08-10T06:42:25.000Z</published>
-    <updated>2018-08-10T07:02:23.000Z</updated>
+    <updated>2018-08-10T07:05:26.000Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Demo：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
+      &lt;p&gt;Demo：&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; numpy &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; np&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; plt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; tensorflow &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; tf&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;num_points = &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vectors_set = []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; range(num_points):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    x1 = np.random.normal(&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0.55&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    y1 = x1 * &lt;span class=&quot;number&quot;&gt;0.1&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;0.3&lt;/span&gt; + np.random.normal(&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0.03&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    vectors_set.append([x1, y1])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;x_data = [v[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; v &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; vectors_set]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;y_data = [v[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; v &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; vectors_set]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
