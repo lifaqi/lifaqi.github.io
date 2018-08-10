@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-08-07T09:24:19.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>神无月</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git丢失文件找回</title>
+    <link href="http://yoursite.com/2018/08/07/Git%E4%B8%A2%E5%A4%B1%E6%96%87%E4%BB%B6%E6%89%BE%E5%9B%9E/"/>
+    <id>http://yoursite.com/2018/08/07/Git丢失文件找回/</id>
+    <published>2018-08-07T09:15:25.000Z</published>
+    <updated>2018-08-07T09:24:19.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1、cd到项目文件目录下&lt;/p&gt;
+&lt;p&gt;2、查看git日志：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git log&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Git应用" scheme="http://yoursite.com/categories/Git%E5%BA%94%E7%94%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PyCharm2018破解</title>
+    <link href="http://yoursite.com/2018/08/07/PyCharm2018%E7%A0%B4%E8%A7%A3/"/>
+    <id>http://yoursite.com/2018/08/07/PyCharm2018破解/</id>
+    <published>2018-08-07T08:20:04.000Z</published>
+    <updated>2018-08-07T08:44:55.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1、&lt;a href=&quot;https://www.jetbrains.com/pycharm/download/#section=mac&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;到官网去下载PyCharm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2、&lt;a href=&quot;https://pan.baidu.com/s/1CyylP4VyXZDaHLC291sRSA&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载破解补丁&lt;/a&gt;  密码:sqgc&lt;/p&gt;
+&lt;p&gt;3、将补丁复制到你的PyCharm的安装目录下的lib文件夹中
+    
+    </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python多线程threading</title>
+    <link href="http://yoursite.com/2018/08/07/Python%E5%A4%9A%E7%BA%BF%E7%A8%8Bthreading/"/>
+    <id>http://yoursite.com/2018/08/07/Python多线程threading/</id>
+    <published>2018-08-07T02:56:54.000Z</published>
+    <updated>2018-08-07T03:04:44.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; time&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; threading&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; requests&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;headers = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&#39;authorization&#39;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;www.zhihu.com&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&#39;User-Agent&#39;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&#39;cookie&#39;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;d_c0=&quot;ADCimU9GoA2PTuwqBBtf7zgvunKrfCVtv2A=|1526874149&quot;; _zap=00e791df-6c80-4e35-80c4-2acffd67869f; q_c1=a4340fbcb86a444f9c0b089763296002|1526884622000|1526884622000; l_cap_id=&quot;YTEwZTFjODJiYWQ2NDk3M2I0NjVhMTFiZTJhYTVmZGU=|1526885234|daa6426325707c6423a8aa05baba3a2ea6e8ea60&quot;; r_cap_id=&quot;ZTJkN2EwYWNlNTI5NDVkYWJhM2FmNWNmMzJjYmUwOTU=|1526885234|a4d99bee7fe65ac0bca9ca13890b548005854d45&quot;; cap_id=&quot;MWMwNjBjMTNiYjMwNDEwZWEwZmY3MjQxOGE1NTZiNmM=|1526885234|ae7bc3b85097120806f19065a89a940a04055157&quot;; capsion_ticket=&quot;2|1:0|10:1526888690|14:capsion_ticket|44:NGMwODJhMjQyODUzNGQ2ODk3MjgzYTgzNjlhNmI5Yjg=|913742186b626c392c95328db7fced52ea4633c7b24290589c66ab9ca70f2db1&quot;; z_c0=&quot;2|1:0|10:1526888730|4:z_c0|92:Mi4xSFJjNENBQUFBQUFBTUtLWlQwYWdEU1lBQUFCZ0FsVk5Hc2Z2V3dCQldORkRDdXdINXFIdXBmcHliYVJMUExjdVJ3|384372d5e04e3497ebb7273823b1c12a9a5ee53e66324a06b852eb5404f3f9c0&quot;; _xsrf=7fafb0c2-bd35-4f18-a243-d20d294ebb44; tgw_l7_route=860ecf76daf7b83f5a2f2dc22dccf049&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;URL = &lt;span class=&quot;string&quot;&gt;&#39;https://www.zhihu.com/api/v4/members/shen-wu-yue-72-74/followees?&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mac系统显示/隐藏文件</title>
+    <link href="http://yoursite.com/2018/08/07/Mac%E7%B3%BB%E7%BB%9F%E6%98%BE%E7%A4%BA-%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/"/>
+    <id>http://yoursite.com/2018/08/07/Mac系统显示-隐藏文件/</id>
+    <published>2018-08-07T01:35:53.000Z</published>
+    <updated>2018-08-07T02:47:10.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1、通过快捷键&quot;&gt;&lt;a href=&quot;#1、通过快捷键&quot; class=&quot;headerlink&quot; title=&quot;1、通过快捷键&quot;&gt;&lt;/a&gt;1、通过快捷键&lt;/h2&gt;&lt;p&gt;Command+Shift+. 可以显示隐藏文件、文件夹，再按一次，恢复隐藏
+    
+    </summary>
+    
+      <category term="Mac电脑应用" scheme="http://yoursite.com/categories/Mac%E7%94%B5%E8%84%91%E5%BA%94%E7%94%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mac电脑怎么查看已连接WiFi的密码</title>
+    <link href="http://yoursite.com/2018/08/06/Mac%E7%94%B5%E8%84%91%E6%80%8E%E4%B9%88%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5WiFi%E7%9A%84%E5%AF%86%E7%A0%81/"/>
+    <id>http://yoursite.com/2018/08/06/Mac电脑怎么查看已连接WiFi的密码/</id>
+    <published>2018-08-06T09:40:13.000Z</published>
+    <updated>2018-08-07T02:46:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1、首先打开系统自带的”钥匙串访问“工具&quot;&gt;&lt;a href=&quot;#1、首先打开系统自带的”钥匙串访问“工具&quot; class=&quot;headerlink&quot; title=&quot;1、首先打开系统自带的”钥匙串访问“工具&quot;&gt;&lt;/a&gt;1、首先打开系统自带的”钥匙串访问“工具
+    
+    </summary>
+    
+      <category term="Mac电脑应用" scheme="http://yoursite.com/categories/Mac%E7%94%B5%E8%84%91%E5%BA%94%E7%94%A8/"/>
+    
+    
+  </entry>
+  
+</feed>
