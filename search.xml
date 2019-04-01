@@ -49,14 +49,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[Python多线程threading]]></title>
-    <url>%2FPython%E5%A4%9A%E7%BA%BF%E7%A8%8Bthreading%2F</url>
-    <content type="text"><![CDATA[123456789101112import timeimport threadingimport requestsheaders = &#123; 'authorization': 'www.zhihu.com', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36', 'cookie': 'd_c0="ADCimU9GoA2PTuwqBBtf7zgvunKrfCVtv2A=|1526874149"; _zap=00e791df-6c80-4e35-80c4-2acffd67869f; q_c1=a4340fbcb86a444f9c0b089763296002|1526884622000|1526884622000; l_cap_id="YTEwZTFjODJiYWQ2NDk3M2I0NjVhMTFiZTJhYTVmZGU=|1526885234|daa6426325707c6423a8aa05baba3a2ea6e8ea60"; r_cap_id="ZTJkN2EwYWNlNTI5NDVkYWJhM2FmNWNmMzJjYmUwOTU=|1526885234|a4d99bee7fe65ac0bca9ca13890b548005854d45"; cap_id="MWMwNjBjMTNiYjMwNDEwZWEwZmY3MjQxOGE1NTZiNmM=|1526885234|ae7bc3b85097120806f19065a89a940a04055157"; capsion_ticket="2|1:0|10:1526888690|14:capsion_ticket|44:NGMwODJhMjQyODUzNGQ2ODk3MjgzYTgzNjlhNmI5Yjg=|913742186b626c392c95328db7fced52ea4633c7b24290589c66ab9ca70f2db1"; z_c0="2|1:0|10:1526888730|4:z_c0|92:Mi4xSFJjNENBQUFBQUFBTUtLWlQwYWdEU1lBQUFCZ0FsVk5Hc2Z2V3dCQldORkRDdXdINXFIdXBmcHliYVJMUExjdVJ3|384372d5e04e3497ebb7273823b1c12a9a5ee53e66324a06b852eb5404f3f9c0"; _xsrf=7fafb0c2-bd35-4f18-a243-d20d294ebb44; tgw_l7_route=860ecf76daf7b83f5a2f2dc22dccf049'&#125;URL = 'https://www.zhihu.com/api/v4/members/shen-wu-yue-72-74/followees? 123456789101112131415161718192021include=data%5B*%5D.answer_count,articles_count,gender,follower_count,is_followed,is_following,badge%5B?(type%3Dbest_answerer)%5D.topics&amp;offset=0&amp;limit=20'def job(): response = requests.get(URL, headers=headers).json() print(response)def main(): threads = [threading.Thread(target=job) for index in range(20)] for t in threads: t.start() for t in threads: t.join()if __name__ == '__main__': t1 = time.time() main() print("花费时间:", time.time() - t1)]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[Mac系统显示/隐藏文件]]></title>
     <url>%2FMac%E7%B3%BB%E7%BB%9F%E6%98%BE%E7%A4%BA-%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[1、通过快捷键Command+Shift+. 可以显示隐藏文件、文件夹，再按一次，恢复隐藏 2、通过终端命令来显示或隐藏在终端（Terminal）输入如下命令： —显示文件 defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder —隐藏文件 defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder 3、通过终端来查找打开终端，进入到要找的隐藏文件目录下，输入：ls -a，就可以看到所有的文件，包括隐藏文件]]></content>
