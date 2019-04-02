@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[王者荣耀数据接口]]></title>
     <url>%2F%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E6%95%B0%E6%8D%AE%E6%8E%A5%E5%8F%A3%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[1、获取英雄列表数据接口 2、获取装备数据接口 3、获取单个英雄的详细信息，需要上面获取的英雄id]]></content>
       <categories>
         <category>王者荣耀</category>
       </categories>
