@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lifaqi.github.io/"/>
-  <updated>2019-04-02T02:14:40.136Z</updated>
+  <updated>2019-09-17T08:46:12.726Z</updated>
   <id>https://lifaqi.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python操作Excel（一）</title>
+    <link href="https://lifaqi.github.io/Python%E6%93%8D%E4%BD%9CExcel%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>https://lifaqi.github.io/Python操作Excel（一）/</id>
+    <published>2019-09-17T08:36:10.000Z</published>
+    <updated>2019-09-17T08:46:12.726Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;数据下载地址：链接:&lt;a href=&quot;https://pan.baidu.com/s/1iRnn7sLaQl6BxiJBXB6Adg&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://lifaqi.github.io/categories/Python/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>王者荣耀数据接口</title>
