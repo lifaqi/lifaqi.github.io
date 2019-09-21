@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Mac设置环境变量PATH]]></title>
+    <url>%2FMac%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FPATH%2F</url>
+    <content type="text"><![CDATA[简介：Mac系统下如何配置环境变量 1、进入home目录 1cd ~/ 2、打开.bash_profile文件，如果没有新建一个 12touch .bash_profile # 新建open .bash_profile #打开 3、然后添加路径，如下 1export PATH=&quot;$HOME/.cargo/bin:$PATH&quot; # $HOME等价于Users/电脑用户名 4、最后更新配置命令 1source .bash_profile]]></content>
+      <categories>
+        <category>Mac电脑应用</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[Python操作Excel（一）]]></title>
     <url>%2FPython%E6%93%8D%E4%BD%9CExcel%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
     <content type="text"><![CDATA[数据下载地址：链接:https://pan.baidu.com/s/1iRnn7sLaQl6BxiJBXB6Adg 密码:zuok 1234567891011121314151617181920212223242526272829303132333435363738import pandas as pdimport osdata = pd.read_excel('/Users/taoegoo/Downloads/data.xls')data['日期'] = [x.split(' ')[0] for x in data['时间']]# 读取目标城市target_city = pd.read_excel('/Users/taoegoo/Downloads/目标城市.xlsx')target_citys = list(target_city['城市'])data['是否在目标城市存在'] = Nonedata.loc[data['城市'].isin(target_citys), '是否在目标城市存在'] = 1data.loc[data['是否在目标城市存在'].isnull(), '是否在目标城市存在'] = 0writer = pd.ExcelWriter('数据汇总.xlsx')starts = 0agency = data['代理商'].unique()for i in agency: data_agency = data[data['代理商'] == i] order = data_agency.groupby('日期')['城市'].count() # 每日总订单量 sold = data_agency.groupby('日期')['价格(元)'].sum() # 每日售出金额 order_target = data_agency[data_agency['是否在目标城市存在'] == 1].groupby('日期')['城市'].count() # 每日目标城市订单量 solder_target = data_agency[data_agency['是否在目标城市存在'] == 1].groupby('日期')['价格(元)'].sum() # 每日目标城市售出金额 # 整理成表 table = pd.concat([order, sold, order_target, solder_target], axis=1) table = pd.DataFrame(table) table.columns = ['总订单量', '总销售价格', '目标城市订单数', '目标城市售出价格'] # 写入Excel title = pd.DataFrame(['代理商：' + i]) # 将代理商名称设置为小标题 title.to_excel(writer, startrow=starts, index=False, columns=None, header=False) table.to_excel(writer, startrow=starts+1) # 写入对应代理商的数据 starts = starts + (len(table) + 2) + 3 # 下一个代理商的写入位置writer.save()]]></content>
