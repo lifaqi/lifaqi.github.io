@@ -6,6 +6,7 @@
     <content type="text"><![CDATA[1、查看网卡名称在终端输入命令ifconfig查看 2、使用airport监听无线网络123456789airport en1 scan# 结果字段注释：SSID 表示 Wi-Fi 名称BSSID 表示 Wi-Fi 设备的硬件地址RSSI 表示信号强度，值是负数，绝对值越小信号越强CHANNEL 表示 Wi-Fi 信道HT 表示吞吐量模式，一般都为 YCC 表示国家，中国为 CNSECURITY 表示加密方式 3、使用airport进行抓包123airport en1 sniff 1 # 1省略代表抓取全部# 一段时间后Ctr+c停止抓包，会生成一个.cap包，看到如下提示Session saved to /tmp/airportSniff0RjCAO.cap 4、安装aircrack-ng1brew install aircrack-ng 5、使用aircrack-ng执行破解，字典资源：https://github.com/conwnet/wpa-dictionary1234aircrack-ng -w common.txt /tmp/airportSniff0RjCAO.cap# 会显示一串列表，最后显示下面一句话：Index number of target network ?输入列表中成功的列表序号，回车，如果成功会打印出密码信息，如果没找到说明该密码字典不存在，就更换密码字典]]></content>
       <categories>
         <category>Mac电脑应用</category>
+        <category>WiFi</category>
       </categories>
   </entry>
   <entry>

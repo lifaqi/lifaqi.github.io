@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lifaqi.github.io/"/>
-  <updated>2019-10-18T08:42:36.411Z</updated>
+  <updated>2019-10-18T08:44:45.730Z</updated>
   <id>https://lifaqi.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lifaqi.github.io/Mac%E7%94%B5%E8%84%91airport%E7%9B%91%E5%90%AC%E7%BD%91%E7%BB%9C%E7%A0%B4%E8%A7%A3wifi/"/>
     <id>https://lifaqi.github.io/Mac电脑airport监听网络破解wifi/</id>
     <published>2019-10-18T08:16:03.000Z</published>
-    <updated>2019-10-18T08:42:36.411Z</updated>
+    <updated>2019-10-18T08:44:45.730Z</updated>
     
     <summary type="html">
     
@@ -37,6 +37,8 @@
     </summary>
     
       <category term="Mac电脑应用" scheme="https://lifaqi.github.io/categories/Mac%E7%94%B5%E8%84%91%E5%BA%94%E7%94%A8/"/>
+    
+      <category term="WiFi" scheme="https://lifaqi.github.io/categories/Mac%E7%94%B5%E8%84%91%E5%BA%94%E7%94%A8/WiFi/"/>
     
     
   </entry>
